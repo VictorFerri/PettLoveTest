@@ -1,0 +1,38 @@
+// Ant Design
+@import '~antd/dist/antd.css';
+
+body,
+html,
+#root {
+
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.ant-btn {
+    // background-color: ;
+    font-weight: bold;
+    line-height: 1;
+
+    &.ant-btn-primary {
+        color: #546E4D;
+        border-color: #546E4D;
+        background-color: #fff;
+       
+    }
+
+    &.ant-btn-text {
+        color: white;
+        background-color: #546E4D;
+    }
+}
+
+// Components
+@import 'components/header';
+// Pages
+@import 'pages/home';
