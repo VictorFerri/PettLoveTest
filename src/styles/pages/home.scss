@@ -1,23 +1,101 @@
 div#home {
-    
+
     .hero {
         background-color: #F7F4EB;
         height: 530px;
+        display: flex;
+        justify-content: center;
 
+        // align-items: center;
         div {
-            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding-top: 168px;
+            width: 675px;
+            text-align: center;
 
             h2 {
                 color: #9A9A9A;
                 text-transform: uppercase;
-                font-weight: bold;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
             }
 
             h1 {
-                padding: 28px 0px 38px 0px;
+                margin: 28px 0px 38px 0px;
+                font-size: 48px;
+                line-height: 59px;
+                font-weight: 900;
                 color: #506849;
             }
+        }
+    }
+
+    .middle {
+        padding-top: 170px;
+        padding-bottom: 328px;
+        margin: 0 auto;
+        max-width: 1180px;
+
+        .box {
+            gap: 120px;
+            display: flex;
+            position: relative;
+            padding-bottom: 337px;
+
+            .photo-img {
+                box-shadow: 20px 20px 0px #F4C80F;
+                width: 480px;
+                height: 360px;
+            }
+
+            div {
+
+                padding: 15px 0px;
+
+                img {
+                    padding-bottom: 40px;
+
+                }
+
+                h1 {
+                    margin-bottom: 11px;
+                    font-weight: 900;
+                    font-size: 36px;
+                    line-height: 44px;
+                    color: #506849;
+
+                    span {
+                        color: #F6C63B;
+                    }
+                }
+
+                p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 150%;
+                    color: #707070;
+                }
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                background-image: url('../../../public/left-line.svg');
+                width: 607px;
+                background-size: contain;
+                height: 323px;
+                background-repeat: no-repeat;
+                bottom: 1px;
+                left: 220px;
+                top: 370px;
+            }
+        }
+        .invert {
+            flex-direction: row-reverse;
         }
     }
 }
