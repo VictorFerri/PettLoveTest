@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Button } from "antd";
-import {FaRegUser} from 'react-icons/fa';
 
 class Header extends Component {
     render() {

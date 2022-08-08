@@ -1,5 +1,6 @@
 import { Button } from 'antd';
 import React, { Component } from 'react';
+import Footer from '../../components/Footer';
 
 class Home extends Component {
     render() {
@@ -32,12 +33,13 @@ class Home extends Component {
                     <div className="box">
                         <img className="photo-img" src='photo1.png' />
                         <div>
-                            <img src="cadastre-pet.svg" />
+                            <img src="agende.svg" />
                             <h1>Marque um <span>encontro</span></h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas, erat et convallis gravida, nisl libero imperdiet dolor, et vestibulum tortor quam in nunc.</p>
                         </div>
                     </div>
                 </section>
+                <Footer />
             </div>
         )
     }

@@ -43,7 +43,10 @@ div#home {
             gap: 120px;
             display: flex;
             position: relative;
-            padding-bottom: 337px;
+
+            &:not(:last-child) {
+                padding-bottom: 337px;
+            }
 
             .photo-img {
                 box-shadow: 20px 20px 0px #F4C80F;
@@ -81,21 +84,43 @@ div#home {
                 }
             }
 
-            &::after {
-                content: "";
-                position: absolute;
-                background-image: url('../../../public/left-line.svg');
-                width: 607px;
-                background-size: contain;
-                height: 323px;
-                background-repeat: no-repeat;
-                bottom: 1px;
-                left: 220px;
-                top: 370px;
+            &:not(:last-child) {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-image: url('../../../public/left-line.svg');
+                    width: 607px;
+                    background-size: contain;
+                    height: 323px;
+                    background-repeat: no-repeat;
+                    bottom: 1px;
+                    left: 220px;
+                    top: 370px;
+
+                }
+
             }
+
         }
+
         .invert {
             flex-direction: row-reverse;
+
+            &:not(:last-child) {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-image: url('../../../public/right-line.svg');
+                    width: 645px;
+                    background-size: contain;
+                    height: 405px;
+                    background-repeat: no-repeat;
+                    bottom: 1px;
+                    left: 220px;
+                    top: 370px;
+                }
+            }
+
         }
     }
 }
