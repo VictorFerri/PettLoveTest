@@ -17,13 +17,17 @@ html,
 .ant-btn {
     font-weight: bold;
     line-height: 1;
+    &:hover {
+        transform: scale(1.04) 
+    }
 
     &.ant-btn-primary {
         color: #546E4D;
         border-color: #546E4D;
         background-color: #fff;
-    }
 
+    }
+    
     &.ant-btn-text {
         color: white;
         background-color: #546E4D;
