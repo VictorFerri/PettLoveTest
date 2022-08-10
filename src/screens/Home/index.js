@@ -23,7 +23,7 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="box invert">
-                        <img className="photo-img" src='photo1.png' />
+                        <img className="photo-img" src='photo2.png' />
                         <div>
                             <img src="sear.svg" />
                             <h1>Procure <span>pretendentes</span></h1>
@@ -31,7 +31,7 @@ class Home extends Component {
                         </div>
                     </div>
                     <div className="box">
-                        <img className="photo-img" src='photo1.png' />
+                        <img className="photo-img" src='photo3.png' />
                         <div>
                             <img src="agende.svg" />
                             <h1>Marque um <span>encontro</span></h1>
