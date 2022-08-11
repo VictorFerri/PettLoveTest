@@ -3,17 +3,20 @@ import Col from "antd/es/grid/col";
 import React, { Component } from "react";
 import Footer from "../../components/Footer";
 import { motion } from "framer-motion"
+import Header from "../../components/Header";
 
 class PetsDating extends React.Component {
     constructor(props) {
         super(props);
-
-
         this.state = {
             isLoading: false,
             data: [{ animal1: 'Abigail.png', animal2: 'Lisboa.png' }, { animal1: 'Guido.png', animal2: 'Chukito.png' }, { animal1: 'Lisboa.png', animal2: 'Abigail.png' }, { animal1: 'Bob.png', animal2: 'Naosei.png' }, { animal1: 'Naosei.png', animal2: 'Pindamonhangaba.png' }, { animal1: 'Bob.png', animal2: 'Naosei.png' }, { animal1: 'Abigail.png', animal2: 'Lisboa.png' }, { animal1: 'Guido.png', animal2: 'Chukito.png' }, { animal1: 'Lisboa.png', animal2: 'Abigail.png' }, { animal1: 'Bob.png', animal2: 'Naosei.png' }, { animal1: 'Naosei.png', animal2: 'Pindamonhangaba.png' }, { animal1: 'Bob.png', animal2: 'Naosei.png' }]
         }
     }
+
+    componentDidMount(){
+        document.title = "Pets namorando - PettLove"
+      }
 
     onLoadMore = () => {
         this.setState({
@@ -33,6 +36,7 @@ class PetsDating extends React.Component {
 
         return (
             <div id='petsdating'>
+                <Header page={'pets-namorando'} />
                 <div className='hero'>
                     <h1><span>Pets</span> namorando</h1>
                     <h3>Duis aute irure dolor in reprehenderit in voluptate</h3>
@@ -41,8 +45,8 @@ class PetsDating extends React.Component {
                     <Row>
 
                         {this.state.data.map((c, index) => (
-                            <>
-                                <Col id='col' key={index} xs={24} md={12} xl={8}>
+                            <React.Fragment key={index}>
+                                <Col id='col' xs={24} md={12} xl={8}>
                                     <motion.div initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1 }} transition={{ delay: 0.1 }} viewport={{ once: true }}>
                                         <div>
@@ -63,7 +67,7 @@ class PetsDating extends React.Component {
                                         </Col>
 
                                     )}
-                            </>
+                            </React.Fragment>
                         ))}
                     </Row>
                     <div className='btn-container'>

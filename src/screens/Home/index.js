@@ -1,17 +1,27 @@
 import { Button } from 'antd';
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import Footer from '../../components/Footer';
 import { motion } from "framer-motion"
+import Header from '../../components/Header';
 
 class Home extends Component {
+
+    componentDidMount(){
+        document.title = "Home - PettLove"
+      }
+
     render() {
         return (
+            
             <div id="home">
+                <Header page={'como-funciona'} />
                 <section className="hero">
                     <div>
                         <h2>como funciona</h2>
                         <h1>Encontre um pretendente para o seu animal</h1>
-                        <Button type='secondary'>Comece agora!</Button>
+                        <Button type='secondary'><Link to='/pets-namorando'>
+                        Comece agora!</Link></Button>
                     </div>
                 </section>
                 <section className="middle">

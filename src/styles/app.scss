@@ -17,8 +17,9 @@ html,
 .ant-btn {
     font-weight: bold;
     line-height: 1;
+
     &:hover {
-        transform: scale(1.04) 
+        transform: scale(1.04)
     }
 
     &.ant-btn-primary {
@@ -27,7 +28,7 @@ html,
         background-color: #fff;
 
     }
-    
+
     &.ant-btn-text {
         color: white;
         background-color: #546E4D;
@@ -46,9 +47,58 @@ html,
     }
 }
 
+.ant-drawer-header {
+    background-color: #F7F4EB;
+    border: 0px;
+
+    svg {
+        width: 30px;
+        height: 30px;
+        color: #546E4D;
+
+        &:hover {
+            color: #40543b;
+        }
+    }
+}
+
+.ant-drawer-body {
+    background-color: #F7F4EB;
+
+    .ant-menu {
+        // a > {
+            background-color: #F7F4EB;
+            font-size: 18px;
+            font-weight: 600;
+            
+            // }
+            
+        .ant-menu-item {
+            &:hover {
+                background-color: #f0ecde;
+            }
+            a {
+                color:#546E4D;
+
+                &:hover {
+
+                    color:#40543b;
+                }
+            }
+        }
+
+        .ant-menu-item-selected {
+            background-color: #f2eedf;
+            a {
+            color: #F6C63B;}
+        }
+    }
+}
+
 // Components
 @import 'components/header';
 @import 'components/footer';
 // Pages
 @import 'pages/home';
 @import 'pages/petsdating';
+@import 'pages/error';

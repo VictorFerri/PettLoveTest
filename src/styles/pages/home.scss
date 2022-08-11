@@ -1,5 +1,4 @@
 div#home {
-
     .hero {
         background-color: #F7F4EB;
         height: 530px;
@@ -245,9 +244,10 @@ div#home {
         }
     }
 
-    header#header {
-        @media (max-width: 576px) {
+    @media (max-width: 576px) {
+        #header {
             background-color: #F7F4EB;
-        }
-    }
+    }}
+
+    
 }

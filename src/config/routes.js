@@ -4,6 +4,6 @@ import PetsDating from "../screens/PetsDating";
 
 export const Routes = [
 	{path: "/", component: Home},
-	{path: "/petsdating", component: PetsDating},
+	{path: "/pets-namorando", component: PetsDating},
 	{path: "/404", component: Error404},
 ];

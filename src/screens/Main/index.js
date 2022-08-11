@@ -12,7 +12,6 @@ class Main extends Component {
     render() {
         return (
             <ConfigProvider locale={pt_BR}>
-                <Header />
                 <Switch>
                     {Routes.map((route, i) => (
                         <Route
