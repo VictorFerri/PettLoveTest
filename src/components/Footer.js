@@ -71,6 +71,11 @@ class Footer extends Component {
                             <li>Política de cancelamento</li>
                         </ul>
                     </div>
+                    <div className="mobile-informations">
+                        <p>Pett Love - Relacionamento
+                            CNPJ: 43.660.696/0001-95 </p>
+                            <img id='logo' src='clickweblogo.svg' />
+                    </div>
                 </div>
                 <div id='top-button'>
                     <div>

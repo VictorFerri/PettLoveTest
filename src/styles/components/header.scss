@@ -19,12 +19,25 @@ header#header {
         .menu img {
             width: 20px;
             height: 10px;
+
+            
         }
 
         #loginIcon {
             width: 18;
             height: 20px;
             color: white;
+        }
+
+        @media (max-width: 576px) {
+            padding: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+
+            span {
+                display: none;
+            }
         }
 
         
@@ -37,5 +50,15 @@ header#header {
         left: 50%;
         top: 40px;
         transform: translateX(-50%);
+
+        @media (max-width: 576px) {
+            height: 119px;
+            width: 120px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        margin: 0px;
+        padding: 48px 20px 0 20px;
     }
 }

@@ -2,6 +2,7 @@ import { Row } from "antd";
 import Col from "antd/es/grid/col";
 import React, { Component } from "react";
 import Footer from "../../components/Footer";
+import { motion } from "framer-motion"
 
 class PetsDating extends React.Component {
     render() {
@@ -17,15 +18,16 @@ class PetsDating extends React.Component {
                     <Row>
 
                         {couples.map((c, index) => (
-                            <Col key={index} span={8}>
-                                <div>
+                            <Col key={index} xs={24} md={12} xl={8}>
+                                <motion.div initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }} transition={{ delay: 0.1 }} viewport={{ once: true }}>
                                     <div>
                                         <img src={c.animal1} />
                                     </div>
                                     <div>
                                         <img src={c.animal2} />
                                     </div>
-                                </div>
+                                </motion.div>
                                 <h2>{`${c.animal1.replace('.png', '')} e ${c.animal2.replace('.png', '')}`}</h2>
                             </Col>
                         ))}
@@ -35,15 +37,16 @@ class PetsDating extends React.Component {
                     </div>
                     <Row>
                         {couples.map((c, index) => (
-                            <Col key={index} span={8}>
-                                <div>
+                            <Col key={index} xs={24} md={12} xl={8}>
+                                <motion.div initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }} transition={{ delay: 0.1 }} viewport={{ once: true }}>
                                     <div>
                                         <img src={c.animal1} />
                                     </div>
                                     <div>
                                         <img src={c.animal2} />
                                     </div>
-                                </div>
+                                </motion.div>
                                 <h2>{`${c.animal1.replace('.png', '')} e ${c.animal2.replace('.png', '')}`}</h2>
                             </Col>
                         ))}

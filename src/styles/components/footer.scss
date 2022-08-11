@@ -1,6 +1,5 @@
 footer#footer {
     width: 100%;
-    min-height: 550px;
     background-color: #556F4D;
 
     .box {
@@ -13,6 +12,14 @@ footer#footer {
             img {
                 padding-bottom: 82px;
                 // width: 100px;
+
+                @media (max-width: 768px) {
+                    padding-bottom: 42px;
+                }
+
+                @media (max-width: 576px) {
+                    display: none;
+                }
             }
 
             width: 100%;
@@ -28,6 +35,13 @@ footer#footer {
                 font-size: 18px;
                 line-height: 22px;
 
+                @media (max-width: 576px) {
+                    text-align: center;
+                    font-weight: 700;
+                    margin-bottom: 25px;
+                    font-size: 22px;
+                    line-height: 27px;
+                }
             }
 
             div {
@@ -62,6 +76,34 @@ footer#footer {
                     top: 10px;
                     position: absolute;
                 }
+
+                @media (max-width: 1024px) {
+                    & {
+                        width: 320px;
+
+                        input {
+
+                            font-size: 16px;
+
+                            &::placeholder {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    width: 400px;
+                    margin-bottom: 80px;
+                }
+
+                @media (max-width: 576px) {
+                    width: 100%;
+                }
+            }
+
+            @media (max-width: 768px) {
+                display: block;
             }
 
 
@@ -75,7 +117,6 @@ footer#footer {
                 display: flex;
                 gap: 114px;
                 margin-bottom: 72px;
-
 
                 li {
                     font-style: normal;
@@ -114,11 +155,22 @@ footer#footer {
 
                 }
 
+                @media (max-width: 1024px) {
+                    gap: 20px;
+                }
+
+                @media (max-width: 768px) {
+                    gap: 45px;
+                    margin-bottom: 5px;
+                }
+
+                @media (max-width: 576px) {
+                    display: none;
+                }
             }
 
             .social-links {
                 display: flex;
-
                 gap: 40px;
 
                 img {
@@ -126,7 +178,22 @@ footer#footer {
                     padding: 26px;
                     border-radius: 50%;
                 }
+
+                @media (max-width: 768px) {
+                    margin-bottom: 120px;
+                }
+
+                @media (max-width: 576px) {
+                    justify-content: center;
+                    margin-bottom: 40px;
+
+                }
             }
+
+            @media (max-width: 768px) {
+                display: block;
+            }
+
         }
 
 
@@ -137,6 +204,8 @@ footer#footer {
                 display: flex;
                 gap: 40px;
                 list-style-type: none;
+
+
             }
 
             li {
@@ -160,9 +229,37 @@ footer#footer {
                 }
 
             }
+
+            @media (max-width: 576px) {
+                display: none;
+            }
         }
 
+        .mobile-informations {
+            text-align: center;
+            margin-bottom: 35px;
+            p {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: white;
+                padding: 0px 80px;
+                margin-bottom: 40px;
+            }
 
+            img {
+                width: 49.95px;
+                height: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            padding: 92px 20px 0px 20px;
+        }
+
+        @media (max-width: 576px) {
+            padding-top: 46px;
+        }
 
     }
 
@@ -192,6 +289,22 @@ footer#footer {
             margin-top: 6px;
             padding-bottom: 0px;
             color: white;
+
+            @media (max-width: 1024px) {
+                width: 20px;
+            }
+
+            @media (max-width: 768px) {
+                white-space: unset;
+                width: 100%;
+                margin-top: 0px;
+            }
+
+            @media (max-width: 576px) {
+                display: none;
+            }
+
+
         }
 
         .ant-back-top {
@@ -201,6 +314,10 @@ footer#footer {
         img#logo {
             width: 49.95px;
             height: 10px;
+
+            @media (max-width: 576px) {
+                display: none;
+            }
         }
 
         text-align: center;
@@ -213,6 +330,16 @@ footer#footer {
         div:last-child {
             text-align: right;
             transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {}
+    }
+
+    @media (min-width: 576px) {
+        min-height: 550px;
+
+        .mobile-informations {
+            display: none;
         }
     }
 }
