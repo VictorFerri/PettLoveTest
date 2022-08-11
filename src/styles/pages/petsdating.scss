@@ -40,7 +40,7 @@
 
         }
 
-        .ant-col {
+        .ant-col:not(.social) {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -97,6 +97,12 @@
             color: #9A9A9A;
         }
 
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 144px;
     }
 
 }
